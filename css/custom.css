@@ -1,0 +1,114 @@
+#head h1 a
+{
+  display: block;
+  background: url('logo.png') 20px 50% no-repeat;
+  height: 73px;
+  width: 195px;
+  overflow: hidden;
+}
+
+#main-div 
+{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#personal-column
+{
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: 1px dashed black;
+  border-top: 1px dashed black;
+  background-color: lightgray;
+}
+
+#personal-info
+{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  padding-left: 15px;
+}
+
+#text-column
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding-left: 10px;
+}
+
+#profile-picture
+{
+  height: 150px;
+  width: 150px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bold-span
+{
+  font-weight: bold;
+  color: dark-grey;
+  font-size: 115%;
+}
+
+.interest-list li
+{
+  font-size: 115%;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1030px) 
+{
+  #personal-column
+  {
+    min-width: 40%;
+  }
+
+  #text-column 
+  {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1075px) 
+{
+  #personal-column
+  {
+    min-width: 30%;
+  }
+
+  #text-column 
+  {
+    max-width: 70%;
+  }
+}
+
+
+@media screen and (min-width: 1720px) 
+{
+  #personal-column
+  {
+    max-width: 15%;
+  }
+
+  #text-column 
+  {
+    min-width: 80%;
+  }
+}
